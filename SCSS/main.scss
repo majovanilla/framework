@@ -1,0 +1,23 @@
+@import 'reset';
+
+$gutter-width: 20px;
+$column-width: 60px;
+
+// ----------- GRID GENERAL FORMULA ---------------
+
+@mixin grid-unit($span) {
+  float: left;
+  margin-right: $gutter-width;
+  width: ($column-width * $span) + ($gutter-width * ($span - 1));
+}
+
+// Creates the col-* class from 1-12
+$class-col: col;
+@for $i from 1 through 12 {
+      .#{$class-col}-#{$i} {@include grid-unit($i);}
+}
+
+.row {
+  @include grid-unit(12);
+}
+

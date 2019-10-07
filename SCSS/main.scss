@@ -45,3 +45,12 @@ $sizes: 0.5rem, 1rem, 1.5rem, 2rem, 2.5rem;
     }
   $sizes-name: $sizes-name+1;
   }
+
+  @each $size in $sizes {
+    .p-#{$sizes-name} {
+    margin: $size;
+    }
+  $sizes-name: $sizes-name+1;
+  }
+
+  

@@ -33,3 +33,15 @@ $class-col: col;
     width: auto;
   }
 }
+
+
+// Creates margins & paddings
+$sizes-name: 1;
+$sizes: 0.5rem, 1rem, 1.5rem, 2rem, 2.5rem;
+
+  @each $size in $sizes {
+    .m-#{$sizes-name} {
+    margin: $size;
+    }
+  $sizes-name: $sizes-name+1;
+  }

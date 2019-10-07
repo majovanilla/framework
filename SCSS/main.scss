@@ -1,4 +1,4 @@
-@import 'reset';
+@import "reset";
 
 $gutter-width: 20px;
 $column-width: 60px;
@@ -6,7 +6,8 @@ $column-width: 60px;
 // ----------- GRID GENERAL FORMULA ---------------
 
 @mixin grid-unit($span) {
-  float: left;
+  display: flex;
+  border: red 1px solid; //delete this at the end
   margin-right: $gutter-width;
   width: ($column-width * $span) + ($gutter-width * ($span - 1));
 }
@@ -14,10 +15,20 @@ $column-width: 60px;
 // Creates the col-* class from 1-12
 $class-col: col;
 @for $i from 1 through 12 {
-      .#{$class-col}-#{$i} {@include grid-unit($i);}
+  .#{$class-col}-#{$i} {
+    @include grid-unit($i);
+  }
 }
 
 .row {
-  @include grid-unit(12);
+  display: flex;
 }
 
+.container {
+  width: 940px;
+  margin: auto;
+
+  @media screen and (max-width: 940px) {
+    width: auto;
+  }
+}

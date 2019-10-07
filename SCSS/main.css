@@ -42,63 +42,85 @@ table {
   border-spacing: 0; }
 
 .col-1 {
-  float: left;
+  display: flex;
+  border: red 1px solid;
   margin-right: 20px;
   width: 60px; }
 
 .col-2 {
-  float: left;
+  display: flex;
+  border: red 1px solid;
   margin-right: 20px;
   width: 140px; }
 
 .col-3 {
-  float: left;
+  display: flex;
+  border: red 1px solid;
   margin-right: 20px;
   width: 220px; }
 
 .col-4 {
-  float: left;
+  display: flex;
+  border: red 1px solid;
   margin-right: 20px;
   width: 300px; }
 
 .col-5 {
-  float: left;
+  display: flex;
+  border: red 1px solid;
   margin-right: 20px;
   width: 380px; }
 
 .col-6 {
-  float: left;
+  display: flex;
+  border: red 1px solid;
   margin-right: 20px;
   width: 460px; }
 
 .col-7 {
-  float: left;
+  display: flex;
+  border: red 1px solid;
   margin-right: 20px;
   width: 540px; }
 
 .col-8 {
-  float: left;
+  display: flex;
+  border: red 1px solid;
   margin-right: 20px;
   width: 620px; }
 
 .col-9 {
-  float: left;
+  display: flex;
+  border: red 1px solid;
   margin-right: 20px;
   width: 700px; }
 
 .col-10 {
-  float: left;
+  display: flex;
+  border: red 1px solid;
   margin-right: 20px;
   width: 780px; }
 
 .col-11 {
-  float: left;
+  display: flex;
+  border: red 1px solid;
   margin-right: 20px;
   width: 860px; }
 
 .col-12 {
-  float: left;
+  display: flex;
+  border: red 1px solid;
   margin-right: 20px;
   width: 940px; }
 
-/*# sourceMappingURL=styles.css.map */
+.row {
+  display: flex; }
+
+.container {
+  width: 940px;
+  margin: auto; }
+  @media screen and (max-width: 940px) {
+    .container {
+      width: auto; } }
+
+/*# sourceMappingURL=main.css.map */

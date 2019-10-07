@@ -1,12 +1,12 @@
 @import "reset";
 
-$gutter-width: 20px;
-$column-width: 60px;
+$gutter-width: 1%;
+$column-width: (88%/12);
 
 // ----------- GRID GENERAL FORMULA ---------------
 
 @mixin grid-unit($span) {
-  display: flex;
+  float: left;
   border: red 1px solid; //delete this at the end
   margin-right: $gutter-width;
   width: ($column-width * $span) + ($gutter-width * ($span - 1));
@@ -22,6 +22,7 @@ $class-col: col;
 
 .row {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .container {

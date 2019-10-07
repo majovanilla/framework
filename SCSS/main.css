@@ -41,80 +41,84 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+* {
+  box-sizing: border-box; }
+
 .col-1 {
-  display: flex;
+  float: left;
   border: red 1px solid;
-  margin-right: 20px;
-  width: 60px; }
+  margin-right: 1%;
+  width: 7.3333333333%; }
 
 .col-2 {
-  display: flex;
+  float: left;
   border: red 1px solid;
-  margin-right: 20px;
-  width: 140px; }
+  margin-right: 1%;
+  width: 15.6666666667%; }
 
 .col-3 {
-  display: flex;
+  float: left;
   border: red 1px solid;
-  margin-right: 20px;
-  width: 220px; }
+  margin-right: 1%;
+  width: 24%; }
 
 .col-4 {
-  display: flex;
+  float: left;
   border: red 1px solid;
-  margin-right: 20px;
-  width: 300px; }
+  margin-right: 1%;
+  width: 32.3333333333%; }
 
 .col-5 {
-  display: flex;
+  float: left;
   border: red 1px solid;
-  margin-right: 20px;
-  width: 380px; }
+  margin-right: 1%;
+  width: 40.6666666667%; }
 
 .col-6 {
-  display: flex;
+  float: left;
   border: red 1px solid;
-  margin-right: 20px;
-  width: 460px; }
+  margin-right: 1%;
+  width: 49%; }
 
 .col-7 {
-  display: flex;
+  float: left;
   border: red 1px solid;
-  margin-right: 20px;
-  width: 540px; }
+  margin-right: 1%;
+  width: 57.3333333333%; }
 
 .col-8 {
-  display: flex;
+  float: left;
   border: red 1px solid;
-  margin-right: 20px;
-  width: 620px; }
+  margin-right: 1%;
+  width: 65.6666666667%; }
 
 .col-9 {
-  display: flex;
+  float: left;
   border: red 1px solid;
-  margin-right: 20px;
-  width: 700px; }
+  margin-right: 1%;
+  width: 74%; }
 
 .col-10 {
-  display: flex;
+  float: left;
   border: red 1px solid;
-  margin-right: 20px;
-  width: 780px; }
+  margin-right: 1%;
+  width: 82.3333333333%; }
 
 .col-11 {
-  display: flex;
+  float: left;
   border: red 1px solid;
-  margin-right: 20px;
-  width: 860px; }
+  margin-right: 1%;
+  width: 90.6666666667%; }
 
 .col-12 {
-  display: flex;
+  float: left;
   border: red 1px solid;
-  margin-right: 20px;
-  width: 940px; }
+  margin-right: 1%;
+  width: 99%; }
 
 .row {
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap; }
 
 .container {
   width: 940px;

@@ -44,6 +44,15 @@ table {
 * {
   box-sizing: border-box; }
 
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5,
+.col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6,
+.col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7,
+.col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8,
+.col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12,
+.col-xl {
+  position: relative;
+  width: 100%; }
+
 .col-1 {
   float: left;
   border: red 1px solid;
@@ -116,6 +125,366 @@ table {
   margin-right: 1%;
   width: 99%; }
 
+@media screen and (max-width: 575px) {
+  .col-xs-1 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 7.3333333333% !important; } }
+@media screen and (max-width: 575px) {
+  .col-xs-2 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 15.6666666667% !important; } }
+@media screen and (max-width: 575px) {
+  .col-xs-3 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 24% !important; } }
+@media screen and (max-width: 575px) {
+  .col-xs-4 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 32.3333333333% !important; } }
+@media screen and (max-width: 575px) {
+  .col-xs-5 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 40.6666666667% !important; } }
+@media screen and (max-width: 575px) {
+  .col-xs-6 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 49% !important; } }
+@media screen and (max-width: 575px) {
+  .col-xs-7 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 57.3333333333% !important; } }
+@media screen and (max-width: 575px) {
+  .col-xs-8 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 65.6666666667% !important; } }
+@media screen and (max-width: 575px) {
+  .col-xs-9 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 74% !important; } }
+@media screen and (max-width: 575px) {
+  .col-xs-10 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 82.3333333333% !important; } }
+@media screen and (max-width: 575px) {
+  .col-xs-11 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 90.6666666667% !important; } }
+@media screen and (max-width: 575px) {
+  .col-xs-12 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 99% !important; } }
+@media screen and (min-width: 576px) {
+  .col-sm-1 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 7.3333333333% !important; } }
+@media screen and (min-width: 576px) {
+  .col-sm-2 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 15.6666666667% !important; } }
+@media screen and (min-width: 576px) {
+  .col-sm-3 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 24% !important; } }
+@media screen and (min-width: 576px) {
+  .col-sm-4 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 32.3333333333% !important; } }
+@media screen and (min-width: 576px) {
+  .col-sm-5 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 40.6666666667% !important; } }
+@media screen and (min-width: 576px) {
+  .col-sm-6 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 49% !important; } }
+@media screen and (min-width: 576px) {
+  .col-sm-7 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 57.3333333333% !important; } }
+@media screen and (min-width: 576px) {
+  .col-sm-8 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 65.6666666667% !important; } }
+@media screen and (min-width: 576px) {
+  .col-sm-9 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 74% !important; } }
+@media screen and (min-width: 576px) {
+  .col-sm-10 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 82.3333333333% !important; } }
+@media screen and (min-width: 576px) {
+  .col-sm-11 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 90.6666666667% !important; } }
+@media screen and (min-width: 576px) {
+  .col-sm-12 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 99% !important; } }
+@media screen and (min-width: 768px) {
+  .col-md-1 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 7.3333333333% !important; } }
+@media screen and (min-width: 768px) {
+  .col-md-2 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 15.6666666667% !important; } }
+@media screen and (min-width: 768px) {
+  .col-md-3 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 24% !important; } }
+@media screen and (min-width: 768px) {
+  .col-md-4 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 32.3333333333% !important; } }
+@media screen and (min-width: 768px) {
+  .col-md-5 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 40.6666666667% !important; } }
+@media screen and (min-width: 768px) {
+  .col-md-6 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 49% !important; } }
+@media screen and (min-width: 768px) {
+  .col-md-7 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 57.3333333333% !important; } }
+@media screen and (min-width: 768px) {
+  .col-md-8 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 65.6666666667% !important; } }
+@media screen and (min-width: 768px) {
+  .col-md-9 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 74% !important; } }
+@media screen and (min-width: 768px) {
+  .col-md-10 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 82.3333333333% !important; } }
+@media screen and (min-width: 768px) {
+  .col-md-11 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 90.6666666667% !important; } }
+@media screen and (min-width: 768px) {
+  .col-md-12 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 99% !important; } }
+@media screen and (min-width: 992px) {
+  .col-lg-1 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 7.3333333333% !important; } }
+@media screen and (min-width: 992px) {
+  .col-lg-2 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 15.6666666667% !important; } }
+@media screen and (min-width: 992px) {
+  .col-lg-3 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 24% !important; } }
+@media screen and (min-width: 992px) {
+  .col-lg-4 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 32.3333333333% !important; } }
+@media screen and (min-width: 992px) {
+  .col-lg-5 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 40.6666666667% !important; } }
+@media screen and (min-width: 992px) {
+  .col-lg-6 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 49% !important; } }
+@media screen and (min-width: 992px) {
+  .col-lg-7 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 57.3333333333% !important; } }
+@media screen and (min-width: 992px) {
+  .col-lg-8 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 65.6666666667% !important; } }
+@media screen and (min-width: 992px) {
+  .col-lg-9 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 74% !important; } }
+@media screen and (min-width: 992px) {
+  .col-lg-10 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 82.3333333333% !important; } }
+@media screen and (min-width: 992px) {
+  .col-lg-11 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 90.6666666667% !important; } }
+@media screen and (min-width: 992px) {
+  .col-lg-12 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 99% !important; } }
+@media screen and (min-width: 1200px) {
+  .col-xl-1 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 7.3333333333% !important; } }
+@media screen and (min-width: 1200px) {
+  .col-xl-2 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 15.6666666667% !important; } }
+@media screen and (min-width: 1200px) {
+  .col-xl-3 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 24% !important; } }
+@media screen and (min-width: 1200px) {
+  .col-xl-4 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 32.3333333333% !important; } }
+@media screen and (min-width: 1200px) {
+  .col-xl-5 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 40.6666666667% !important; } }
+@media screen and (min-width: 1200px) {
+  .col-xl-6 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 49% !important; } }
+@media screen and (min-width: 1200px) {
+  .col-xl-7 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 57.3333333333% !important; } }
+@media screen and (min-width: 1200px) {
+  .col-xl-8 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 65.6666666667% !important; } }
+@media screen and (min-width: 1200px) {
+  .col-xl-9 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 74% !important; } }
+@media screen and (min-width: 1200px) {
+  .col-xl-10 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 82.3333333333% !important; } }
+@media screen and (min-width: 1200px) {
+  .col-xl-11 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 90.6666666667% !important; } }
+@media screen and (min-width: 1200px) {
+  .col-xl-12 {
+    float: left;
+    border: red 1px solid;
+    margin-right: 1%;
+    width: 99% !important; } }
 .row {
   display: flex;
   flex-wrap: wrap; }
@@ -142,19 +511,19 @@ table {
 .m-5 {
   margin: 2.5rem; }
 
-.p-6 {
+.p-1 {
   margin: 0.5rem; }
 
-.p-7 {
+.p-2 {
   margin: 1rem; }
 
-.p-8 {
+.p-3 {
   margin: 1.5rem; }
 
-.p-9 {
+.p-4 {
   margin: 2rem; }
 
-.p-10 {
+.p-5 {
   margin: 2.5rem; }
 
 /*# sourceMappingURL=main.css.map */

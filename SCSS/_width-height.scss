@@ -1,0 +1,31 @@
+// Width and Height 
+
+@for $i from 1 through 10 {
+	.h-#{$wh-options * $i}{
+		height: ($wh-options * $i)#{"%"};
+	}
+	
+	.w-#{$wh-options * $i}{
+		width: ($wh-options * $i)#{"%"};
+	}
+	
+}
+
+$j: 1;
+@each $break in $breaks {
+
+    @media screen and (min-width: $break) { 
+
+		@for $i from 1 through 10 {
+			.h-#{nth($breakpoints,$j)}-#{$wh-options * $i}{
+				height: ($wh-options * $i)#{"%"};
+			}
+			
+			.w-#{nth($breakpoints,$j)}-#{$wh-options * $i}{
+				width: ($wh-options * $i)#{"%"};
+			}
+		}
+    }   
+	$j: $j + 1
+}
+

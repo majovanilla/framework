@@ -96,7 +96,6 @@ $xl: xl;
   }
 }
 
-
 // Creates margins & paddings
 $sizes-name: 1;
 $sizes: 0.5rem, 1rem, 1.5rem, 2rem, 2.5rem, 3rem, 3.5rem, 4rem, 4.5rem, 5rem;
@@ -126,8 +125,6 @@ $side-name: "left", "right", "top", "bottom";
   }   
   $sizes-name: $sizes-name+1;
 }
-
-@each $sides in $side {
 
 $sizes-name: 1;
 
@@ -168,12 +165,129 @@ $sizes-name: $sizes-name+1;
     .my-#{$xs}-#{$sizes-name} {
       margin: $size 0;
     }
-    @each $siden in $side-name {
-      @each $sides in $side {
-        .m#{$sides}-#{$xs}-#{$sizes-name}{
-          margin-#{$siden}: $size
-        } 
-      }
+    .ml-#{$xs}-#{$sizes-name} {
+      margin-left: $size;
+    }
+    .mr-#{$xs}-#{$sizes-name} {
+      margin-right: $size;
+    }
+	.mt-#{$xs}-#{$sizes-name} {
+      margin-top: $size;
+    }
+    .mb-#{$xs}-#{$sizes-name} {
+      margin-bottom: $size;
+    }
+  $sizes-name: $sizes-name+1;
+  }
+}
+
+@media screen and (min-width: $breakpoint-sm) {
+  $sizes-name: 1;
+  @each $size in $sizes {
+    .m-#{$sm}-#{$sizes-name} {
+        margin: $size;
+    }
+    .mx-#{$sm}-#{$sizes-name} {
+      margin: 0 $size;
+    }
+    .my-#{$sm}-#{$sizes-name} {
+      margin: $size 0;
+    }
+    .ml-#{$sm}-#{$sizes-name} {
+      margin-left: $size;
+    }
+    .mr-#{$sm}-#{$sizes-name} {
+      margin-right: $size;
+    }
+	.mt-#{$sm}-#{$sizes-name} {
+      margin-top: $size;
+    }
+    .mb-#{$sm}-#{$sizes-name} {
+      margin-bottom: $size;
+    }
+  $sizes-name: $sizes-name+1;
+  }
+}
+
+@media screen and (min-width: $breakpoint-md) {
+  $sizes-name: 1;
+  @each $size in $sizes {
+    .m-#{$md}-#{$sizes-name} {
+        margin: $size;
+    }
+    .mx-#{$md}-#{$sizes-name} {
+      margin: 0 $size;
+    }
+    .my-#{$md}-#{$sizes-name} {
+      margin: $size 0;
+    }
+    .ml-#{$md}-#{$sizes-name} {
+      margin-left: $size;
+    }
+    .mr-#{$md}-#{$sizes-name} {
+      margin-right: $size;
+    }
+	.mt-#{$md}-#{$sizes-name} {
+      margin-top: $size;
+    }
+    .mb-#{$md}-#{$sizes-name} {
+      margin-bottom: $size;
+    }
+  $sizes-name: $sizes-name+1;
+  }
+}
+
+@media screen and (min-width: $breakpoint-lg) {
+  $sizes-name: 1;
+  @each $size in $sizes {
+    .m-#{$lg}-#{$sizes-name} {
+        margin: $size;
+    }
+    .mx-#{$lg}-#{$sizes-name} {
+      margin: 0 $size;
+    }
+    .my-#{$lg}-#{$sizes-name} {
+      margin: $size 0;
+    }
+    .ml-#{$lg}-#{$sizes-name} {
+      margin-left: $size;
+    }
+    .mr-#{$lg}-#{$sizes-name} {
+      margin-right: $size;
+    }
+	.mt-#{$lg}-#{$sizes-name} {
+      margin-top: $size;
+    }
+    .mb-#{$lg}-#{$sizes-name} {
+      margin-bottom: $size;
+    }
+  $sizes-name: $sizes-name+1;
+  }
+}
+
+@media screen and (min-width: $breakpoint-xl) {
+  $sizes-name: 1;
+  @each $size in $sizes {
+    .m-#{$xl}-#{$sizes-name} {
+        margin: $size;
+    }
+    .mx-#{$xl}-#{$sizes-name} {
+      margin: 0 $size;
+    }
+    .my-#{$xl}-#{$sizes-name} {
+      margin: $size 0;
+    }
+    .ml-#{$xl}-#{$sizes-name} {
+      margin-left: $size;
+    }
+    .mr-#{$xl}-#{$sizes-name} {
+      margin-right: $size;
+    }
+	.mt-#{$xl}-#{$sizes-name} {
+      margin-top: $size;
+    }
+    .mb-#{$xl}-#{$sizes-name} {
+      margin-bottom: $size;
     }
   $sizes-name: $sizes-name+1;
   }
@@ -191,14 +305,130 @@ $sizes-name: $sizes-name+1;
     .py-#{$xs}-#{$sizes-name} {
       padding: $size 0;
     }
-    @each $siden in $side-name {
-      @each $sides in $side {
-        .p#{$sides}-#{$xs}-#{$sizes-name}{
-          padding-#{$siden}: $size
-        } 
-      }
+    .pl-#{$xs}-#{$sizes-name} {
+      padding-left: $size;
+    }
+    .pr-#{$xs}-#{$sizes-name} {
+      padding-right: $size;
+    }
+	.pt-#{$xs}-#{$sizes-name} {
+      padding-top: $size;
+    }
+    .pb-#{$xs}-#{$sizes-name} {
+      padding-bottom: $size;
     }
   $sizes-name: $sizes-name+1;
   }
 }
-  
+
+@media screen and (min-width: $breakpoint-sm) { 
+  $sizes-name: 1;
+  @each $size in $sizes {
+    .p-#{$sm}-#{$sizes-name} {
+        padding: $size;
+    }
+    .px-#{$sm}-#{$sizes-name} {
+      padding: 0 $size;
+    }
+    .py-#{$sm}-#{$sizes-name} {
+      padding: $size 0;
+    }
+    .pl-#{$sm}-#{$sizes-name} {
+      padding-left: $size;
+    }
+    .pr-#{$sm}-#{$sizes-name} {
+      padding-right: $size;
+    }
+	.pt-#{$sm}-#{$sizes-name} {
+      padding-top: $size;
+    }
+    .pb-#{$sm}-#{$sizes-name} {
+      padding-bottom: $size;
+    }
+  $sizes-name: $sizes-name+1;
+  }
+}
+
+@media screen and (min-width: $breakpoint-md) { 
+  $sizes-name: 1;
+  @each $size in $sizes {
+    .p-#{$md}-#{$sizes-name} {
+        padding: $size;
+    }
+    .px-#{$md}-#{$sizes-name} {
+      padding: 0 $size;
+    }
+    .py-#{$md}-#{$sizes-name} {
+      padding: $size 0;
+    }
+    .pl-#{$md}-#{$sizes-name} {
+      padding-left: $size;
+    }
+    .pr-#{$md}-#{$sizes-name} {
+      padding-right: $size;
+    }
+	.pt-#{$md}-#{$sizes-name} {
+      padding-top: $size;
+    }
+    .pb-#{$md}-#{$sizes-name} {
+      padding-bottom: $size;
+    }
+  $sizes-name: $sizes-name+1;
+  }
+}
+
+@media screen and (min-width: $breakpoint-lg) { 
+  $sizes-name: 1;
+  @each $size in $sizes {
+    .p-#{$lg}-#{$sizes-name} {
+        padding: $size;
+    }
+    .px-#{$lg}-#{$sizes-name} {
+      padding: 0 $size;
+    }
+    .py-#{$lg}-#{$sizes-name} {
+      padding: $size 0;
+    }
+    .pl-#{$lg}-#{$sizes-name} {
+      padding-left: $size;
+    }
+    .pr-#{$lg}-#{$sizes-name} {
+      padding-right: $size;
+    }
+	.pt-#{$lg}-#{$sizes-name} {
+      padding-top: $size;
+    }
+    .pb-#{$lg}-#{$sizes-name} {
+      padding-bottom: $size;
+    }
+  $sizes-name: $sizes-name+1;
+  }
+}
+
+@media screen and (min-width: $breakpoint-xl) { 
+  $sizes-name: 1;
+  @each $size in $sizes {
+    .p-#{$xl}-#{$sizes-name} {
+        padding: $size;
+    }
+    .px-#{$xl}-#{$sizes-name} {
+      padding: 0 $size;
+    }
+    .py-#{$xl}-#{$sizes-name} {
+      padding: $size 0;
+    }
+    .pl-#{$xl}-#{$sizes-name} {
+      padding-left: $size;
+    }
+    .pr-#{$xl}-#{$sizes-name} {
+      padding-right: $size;
+    }
+	.pt-#{$xl}-#{$sizes-name} {
+      padding-top: $size;
+    }
+    .pb-#{$xl}-#{$sizes-name} {
+      padding-bottom: $size;
+    }
+  $sizes-name: $sizes-name+1;
+  }
+}

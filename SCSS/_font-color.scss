@@ -2,7 +2,18 @@
 
 //Colors
 //Font weight
+@each $font-weight in $font-weights {
 
+	.font-weight-#{$font-weight}{
+		font-weight: $font-weight !important;
+	}
+	
+}
+
+// italic
+.font-italic {
+  font-weight: italic !important;
+}
 
 //Background & Border Colors
 
@@ -23,12 +34,22 @@ $i: 1;
     $i: $i +1;
 }
 
+// change if more colors are added
 @each $side in $side-name {
-    
-    .border-#{$side} {
-        border-#{$side}: solid 1px #{$secondary};
-    }
+
+    @for $k from 1 through 8{
+	
+		.border-#{$side}-#{nth($color-names, $k)} {
+		
+			border-#{$side}: solid 1px #{nth($colors, $k)};
+			
+		}
+		
+	}
+	
 }
 
-
+.border-none{
+  border: none !important;
+}
 

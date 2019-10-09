@@ -6,10 +6,23 @@
     display: flex;
 }
 
-@each $break in $breakpoints {
-    @media screen and (min-width: $breakpoint-#{$break}) { 
-        .d-#{$break}-flex{
+.d-flex {
+ @include display-flex();
+}
+
+@media screen and (max-width: $breakpoint-xs) { 
+.d-#{$xs}-flex{
+	@include display-flex();
+}
+}   
+
+$i: 1;
+@each $break in $breaks {
+    @media screen and (min-width: $break) { 
+        .d-#{nth($breakpoints,$i)}-flex{
         @include display-flex();
         }
     }   
+	
+	$i: $i + 1
 }

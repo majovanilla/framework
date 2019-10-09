@@ -1,0 +1,34 @@
+// FONT STYLES
+
+//Colors
+//Font weight
+
+
+//Background & Border Colors
+
+$i: 1;
+@each $color in $colors {
+
+    .bg-#{nth($color-names, $i)} {
+        background-color: $color;
+    }
+
+    .border-#{nth($color-names, $i)} {
+       border: solid 1px $color;
+   }
+    
+     .#{nth($color-names, $i)} {
+        color: $color;
+    }
+    $i: $i +1;
+}
+
+@each $side in $side-name {
+    
+    .border-#{$side} {
+        border-#{$side}: solid 1px #{$secondary};
+    }
+}
+
+
+

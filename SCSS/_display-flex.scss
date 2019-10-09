@@ -1,0 +1,13 @@
+//DISPLAY-FLEX OPTIONS
+
+@each $display in $display-flex {
+    $i: 1;
+    
+    @each $option in $flex-options {
+
+        .#{$display}-#{nth($flex-name, $i)} {
+            #{$display}: #{$option}; 
+        }
+        $i: $i + 1;
+    }
+}

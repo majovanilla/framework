@@ -99,21 +99,106 @@ $xl: xl;
 
 // Creates margins & paddings
 $sizes-name: 1;
-$sizes: 0.5rem, 1rem, 1.5rem, 2rem, 2.5rem;
+$sizes: 0.5rem, 1rem, 1.5rem, 2rem, 2.5rem, 3rem, 3.5rem, 4rem, 4.5rem, 5rem;
+$side-name: "left", "right", "top", "bottom";
 
-  @each $size in $sizes {
-    .m-#{$sizes-name} {
+@each $size in $sizes {
+  .m-#{$sizes-name} {
     margin: $size;
-    }
-  $sizes-name: $sizes-name+1;
   }
-  
+  .mx-#{$sizes-name} {
+    margin: 0 $size;
+  }
+  .my-#{$sizes-name} {
+    margin: $size 0;
+  }
+  .ml-#{$sizes-name}{
+    margin-left: $size;
+  }   
+  .mr-#{$sizes-name}{
+    margin-right: $size;
+  }   
+  .mt-#{$sizes-name}{
+    margin-top: $size;
+  }   
+  .mb-#{$sizes-name}{
+    margin-bottom: $size;
+  }   
+  $sizes-name: $sizes-name+1;
+}
+
+@each $sides in $side {
+
 $sizes-name: 1;
+
+@each $size in $sizes {
+  .p-#{$sizes-name} {
+    padding: $size;
+  }
+  .px-#{$sizes-name} {
+    padding: 0 $size;
+  }
+  .py-#{$sizes-name} {
+    padding: $size 0;
+  }
+  .pl-#{$sizes-name}{
+    padding-left: $size;
+  }   
+  .pr-#{$sizes-name}{
+    padding-right: $size;
+  }   
+  .pt-#{$sizes-name}{
+    padding-top: $size;
+  }   
+  .pb-#{$sizes-name}{
+    padding-bottom: $size;
+  }   
+$sizes-name: $sizes-name+1;
+}
+
+@media screen and (max-width: $breakpoint-xs) {
+  $sizes-name: 1;
   @each $size in $sizes {
-    .p-#{$sizes-name} {
-    margin: $size;
+    .m-#{$xs}-#{$sizes-name} {
+        margin: $size;
+    }
+    .mx-#{$xs}-#{$sizes-name} {
+      margin: 0 $size;
+    }
+    .my-#{$xs}-#{$sizes-name} {
+      margin: $size 0;
+    }
+    @each $siden in $side-name {
+      @each $sides in $side {
+        .m#{$sides}-#{$xs}-#{$sizes-name}{
+          margin-#{$siden}: $size
+        } 
+      }
     }
   $sizes-name: $sizes-name+1;
   }
+}
 
+@media screen and (max-width: $breakpoint-xs) {
+  $sizes-name: 1;
+  @each $size in $sizes {
+    .p-#{$xs}-#{$sizes-name} {
+        padding: $size;
+    }
+    .px-#{$xs}-#{$sizes-name} {
+      padding: 0 $size;
+    }
+    .py-#{$xs}-#{$sizes-name} {
+      padding: $size 0;
+    }
+    @each $siden in $side-name {
+      @each $sides in $side {
+        .p#{$sides}-#{$xs}-#{$sizes-name}{
+          padding-#{$siden}: $size
+        } 
+      }
+    }
+  $sizes-name: $sizes-name+1;
+  }
+}
   

@@ -24,7 +24,7 @@ $sizes-name: 0;
 $sizes: 0, 0.5rem, 1rem, 1.5rem, 2rem, 2.5rem, 3rem, 3.5rem, 4rem, 4.5rem, 5rem;
 $side-name: "left", "right", "top", "bottom";
 
-$display-flex: justify-content, align-items, align-content;
+$display-flex: justify-content, align-items, align-content align-self;
 $flex-options: flex-start, flex-end, space-around, space-between, center;
 $flex-name: start, end, around, between, center;
 

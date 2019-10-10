@@ -9,7 +9,6 @@
 
 @mixin grid-unit-normal($span) {
   float: left;
-  border: red 1px solid; //delete this at the end
   margin-right: $gutter-width;
   width: ($column-width * $span) + ($gutter-width * ($span - 1));
 }

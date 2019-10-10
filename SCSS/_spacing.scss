@@ -27,7 +27,7 @@
   $sizes-name: $sizes-name+1;
 }
 
-$sizes-name: 1;
+$sizes-name: 0;
 
 @each $size in $sizes {
   .p-#{$sizes-name} {
@@ -55,7 +55,7 @@ $sizes-name: $sizes-name+1;
 }
 
 @media screen and (max-width: $breakpoint-xs) {
-  $sizes-name: 1;
+  $sizes-name: 0;
   @each $size in $sizes {
     .m-#{$xs}-#{$sizes-name} {
         margin: $size;
@@ -83,7 +83,7 @@ $sizes-name: $sizes-name+1;
 }
 
 @media screen and (min-width: $breakpoint-sm) {
-  $sizes-name: 1;
+  $sizes-name: 0;
   @each $size in $sizes {
     .m-#{$sm}-#{$sizes-name} {
         margin: $size;
@@ -111,7 +111,7 @@ $sizes-name: $sizes-name+1;
 }
 
 @media screen and (min-width: $breakpoint-md) {
-  $sizes-name: 1;
+  $sizes-name: 0;
   @each $size in $sizes {
     .m-#{$md}-#{$sizes-name} {
         margin: $size;
@@ -139,7 +139,7 @@ $sizes-name: $sizes-name+1;
 }
 
 @media screen and (min-width: $breakpoint-lg) {
-  $sizes-name: 1;
+  $sizes-name: 0;
   @each $size in $sizes {
     .m-#{$lg}-#{$sizes-name} {
         margin: $size;
@@ -167,7 +167,7 @@ $sizes-name: $sizes-name+1;
 }
 
 @media screen and (min-width: $breakpoint-xl) {
-  $sizes-name: 1;
+  $sizes-name: 0;
   @each $size in $sizes {
     .m-#{$xl}-#{$sizes-name} {
         margin: $size;
@@ -195,7 +195,7 @@ $sizes-name: $sizes-name+1;
 }
 
 @media screen and (max-width: $breakpoint-xs) {
-  $sizes-name: 1;
+  $sizes-name: 0;
   @each $size in $sizes {
     .p-#{$xs}-#{$sizes-name} {
         padding: $size;
@@ -223,7 +223,7 @@ $sizes-name: $sizes-name+1;
 }
 
 @media screen and (min-width: $breakpoint-sm) { 
-  $sizes-name: 1;
+  $sizes-name: 0;
   @each $size in $sizes {
     .p-#{$sm}-#{$sizes-name} {
         padding: $size;
@@ -251,7 +251,7 @@ $sizes-name: $sizes-name+1;
 }
 
 @media screen and (min-width: $breakpoint-md) { 
-  $sizes-name: 1;
+  $sizes-name: 0;
   @each $size in $sizes {
     .p-#{$md}-#{$sizes-name} {
         padding: $size;
@@ -279,7 +279,7 @@ $sizes-name: $sizes-name+1;
 }
 
 @media screen and (min-width: $breakpoint-lg) { 
-  $sizes-name: 1;
+  $sizes-name: 0;
   @each $size in $sizes {
     .p-#{$lg}-#{$sizes-name} {
         padding: $size;
@@ -307,7 +307,7 @@ $sizes-name: $sizes-name+1;
 }
 
 @media screen and (min-width: $breakpoint-xl) { 
-  $sizes-name: 1;
+  $sizes-name: 0;
   @each $size in $sizes {
     .p-#{$xl}-#{$sizes-name} {
         padding: $size;

@@ -73,9 +73,10 @@ Here are some of the specification of the framework:
   * .container
   * .d-* (flex, block, none)
   * p-* & m-* (includes 10 different sizes)
-  * colors and background colors (different than Bootstrap)
+  * Border colors and background colors (different than Bootstrap)
   * Widths and heights (multiples of 10)
   * Flex classes (justify-content and align-content)
+  * Basic font styles (color, font-weight and italic)
 
 This is also part of the Odin project curriculum https://www.theodinproject.com/courses/html5-and-css3/lessons/design-your-own-grid-based-framework
 

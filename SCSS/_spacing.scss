@@ -13,16 +13,16 @@
     margin: $size 0;
   }
   .ml-#{$sizes-name}{
-    margin-left: $size;
+    margin-left: $size !important;
   }   
   .mr-#{$sizes-name}{
-    margin-right: $size;
+    margin-right: $size !important;
   }   
   .mt-#{$sizes-name}{
-    margin-top: $size;
+    margin-top: $size !important;
   }   
   .mb-#{$sizes-name}{
-    margin-bottom: $size;
+    margin-bottom: $size !important;
   }   
   $sizes-name: $sizes-name+1;
 }
@@ -40,16 +40,16 @@ $sizes-name: 0;
     padding: $size 0;
   }
   .pl-#{$sizes-name}{
-    padding-left: $size;
+    padding-left: $size !important;
   }   
   .pr-#{$sizes-name}{
-    padding-right: $size;
+    padding-right: $size !important;
   }   
   .pt-#{$sizes-name}{
-    padding-top: $size;
+    padding-top: $size !important;
   }   
   .pb-#{$sizes-name}{
-    padding-bottom: $size;
+    padding-bottom: $size !important;
   }   
 $sizes-name: $sizes-name+1;
 }
@@ -67,16 +67,16 @@ $sizes-name: $sizes-name+1;
       margin: $size 0;
     }
     .ml-#{$xs}-#{$sizes-name} {
-      margin-left: $size;
+      margin-left: $size !important;
     }
     .mr-#{$xs}-#{$sizes-name} {
-      margin-right: $size;
+      margin-right: $size !important;
     }
 	.mt-#{$xs}-#{$sizes-name} {
-      margin-top: $size;
+      margin-top: $size !important;
     }
     .mb-#{$xs}-#{$sizes-name} {
-      margin-bottom: $size;
+      margin-bottom: $size !important;
     }
   $sizes-name: $sizes-name+1;
   }
@@ -95,16 +95,16 @@ $sizes-name: $sizes-name+1;
       margin: $size 0;
     }
     .ml-#{$sm}-#{$sizes-name} {
-      margin-left: $size;
+      margin-left: $size !important;
     }
     .mr-#{$sm}-#{$sizes-name} {
-      margin-right: $size;
+      margin-right: $size !important;
     }
 	.mt-#{$sm}-#{$sizes-name} {
-      margin-top: $size;
+      margin-top: $size !important;
     }
     .mb-#{$sm}-#{$sizes-name} {
-      margin-bottom: $size;
+      margin-bottom: $size !important;
     }
   $sizes-name: $sizes-name+1;
   }
@@ -123,16 +123,16 @@ $sizes-name: $sizes-name+1;
       margin: $size 0;
     }
     .ml-#{$md}-#{$sizes-name} {
-      margin-left: $size;
+      margin-left: $size !important;
     }
     .mr-#{$md}-#{$sizes-name} {
-      margin-right: $size;
+      margin-right: $size !important;
     }
 	.mt-#{$md}-#{$sizes-name} {
-      margin-top: $size;
+      margin-top: $size !important;
     }
     .mb-#{$md}-#{$sizes-name} {
-      margin-bottom: $size;
+      margin-bottom: $size !important;
     }
   $sizes-name: $sizes-name+1;
   }
@@ -151,16 +151,16 @@ $sizes-name: $sizes-name+1;
       margin: $size 0;
     }
     .ml-#{$lg}-#{$sizes-name} {
-      margin-left: $size;
+      margin-left: $size !important;
     }
     .mr-#{$lg}-#{$sizes-name} {
-      margin-right: $size;
+      margin-right: $size !important;
     }
 	.mt-#{$lg}-#{$sizes-name} {
-      margin-top: $size;
+      margin-top: $size !important;
     }
     .mb-#{$lg}-#{$sizes-name} {
-      margin-bottom: $size;
+      margin-bottom: $size !important;
     }
   $sizes-name: $sizes-name+1;
   }
@@ -179,16 +179,16 @@ $sizes-name: $sizes-name+1;
       margin: $size 0;
     }
     .ml-#{$xl}-#{$sizes-name} {
-      margin-left: $size;
+      margin-left: $size !important;
     }
     .mr-#{$xl}-#{$sizes-name} {
-      margin-right: $size;
+      margin-right: $size !important;
     }
 	.mt-#{$xl}-#{$sizes-name} {
-      margin-top: $size;
+      margin-top: $size !important;
     }
     .mb-#{$xl}-#{$sizes-name} {
-      margin-bottom: $size;
+      margin-bottom: $size !important;
     }
   $sizes-name: $sizes-name+1;
   }
@@ -207,16 +207,16 @@ $sizes-name: $sizes-name+1;
       padding: $size 0;
     }
     .pl-#{$xs}-#{$sizes-name} {
-      padding-left: $size;
+      padding-left: $size !important;
     }
     .pr-#{$xs}-#{$sizes-name} {
-      padding-right: $size;
+      padding-right: $size !important;
     }
 	.pt-#{$xs}-#{$sizes-name} {
-      padding-top: $size;
+      padding-top: $size !important;
     }
     .pb-#{$xs}-#{$sizes-name} {
-      padding-bottom: $size;
+      padding-bottom: $size !important;
     }
   $sizes-name: $sizes-name+1;
   }
@@ -235,16 +235,16 @@ $sizes-name: $sizes-name+1;
       padding: $size 0;
     }
     .pl-#{$sm}-#{$sizes-name} {
-      padding-left: $size;
+      padding-left: $size !important;
     }
     .pr-#{$sm}-#{$sizes-name} {
-      padding-right: $size;
+      padding-right: $size !important;
     }
 	.pt-#{$sm}-#{$sizes-name} {
-      padding-top: $size;
+      padding-top: $size !important;
     }
     .pb-#{$sm}-#{$sizes-name} {
-      padding-bottom: $size;
+      padding-bottom: $size !important;
     }
   $sizes-name: $sizes-name+1;
   }
@@ -263,16 +263,16 @@ $sizes-name: $sizes-name+1;
       padding: $size 0;
     }
     .pl-#{$md}-#{$sizes-name} {
-      padding-left: $size;
+      padding-left: $size !important;
     }
     .pr-#{$md}-#{$sizes-name} {
-      padding-right: $size;
+      padding-right: $size !important;
     }
 	.pt-#{$md}-#{$sizes-name} {
-      padding-top: $size;
+      padding-top: $size !important;
     }
     .pb-#{$md}-#{$sizes-name} {
-      padding-bottom: $size;
+      padding-bottom: $size !important;
     }
   $sizes-name: $sizes-name+1;
   }
@@ -291,16 +291,16 @@ $sizes-name: $sizes-name+1;
       padding: $size 0;
     }
     .pl-#{$lg}-#{$sizes-name} {
-      padding-left: $size;
+      padding-left: $size !important;
     }
     .pr-#{$lg}-#{$sizes-name} {
-      padding-right: $size;
+      padding-right: $size !important;
     }
 	.pt-#{$lg}-#{$sizes-name} {
-      padding-top: $size;
+      padding-top: $size !important;
     }
     .pb-#{$lg}-#{$sizes-name} {
-      padding-bottom: $size;
+      padding-bottom: $size !important;
     }
   $sizes-name: $sizes-name+1;
   }
@@ -319,16 +319,16 @@ $sizes-name: $sizes-name+1;
       padding: $size 0;
     }
     .pl-#{$xl}-#{$sizes-name} {
-      padding-left: $size;
+      padding-left: $size !important;
     }
     .pr-#{$xl}-#{$sizes-name} {
-      padding-right: $size;
+      padding-right: $size !important;
     }
 	.pt-#{$xl}-#{$sizes-name} {
-      padding-top: $size;
+      padding-top: $size !important;
     }
     .pb-#{$xl}-#{$sizes-name} {
-      padding-bottom: $size;
+      padding-bottom: $size !important;
     }
   $sizes-name: $sizes-name+1;
   }

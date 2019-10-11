@@ -53,6 +53,6 @@ table {
 //headings
 @for $s from 1 through 6{
 	h#{$s} {
-	  font-size: (3.5 - (0.5*$s))rem;
+	  font-size: (3.5 - (0.5*$s))#{"rem"};
 	}
 }

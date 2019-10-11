@@ -48,6 +48,24 @@ table {
 * {
   box-sizing: border-box; }
 
+h1 {
+  font-size: 3 rem; }
+
+h2 {
+  font-size: 2.5 rem; }
+
+h3 {
+  font-size: 2 rem; }
+
+h4 {
+  font-size: 1.5 rem; }
+
+h5 {
+  font-size: 1 rem; }
+
+h6 {
+  font-size: 0.5 rem; }
+
 .m-0 {
   margin: 0; }
 

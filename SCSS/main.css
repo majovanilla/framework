@@ -3570,6 +3570,15 @@ h6 {
 .light-gray {
   color: #f6f7f8; }
 
+.bg-article-blue {
+  background-color: #0357a0; }
+
+.border-article-blue {
+  border: solid 1px #0357a0; }
+
+.article-blue {
+  color: #0357a0; }
+
 .border-left-main {
   border-left: solid 1px #001b41; }
 
@@ -3593,6 +3602,9 @@ h6 {
 
 .border-left-light-gray {
   border-left: solid 1px #f6f7f8; }
+
+.border-left-article-blue {
+  border-left: solid 1px #0357a0; }
 
 .border-right-main {
   border-right: solid 1px #001b41; }
@@ -3618,6 +3630,9 @@ h6 {
 .border-right-light-gray {
   border-right: solid 1px #f6f7f8; }
 
+.border-right-article-blue {
+  border-right: solid 1px #0357a0; }
+
 .border-top-main {
   border-top: solid 1px #001b41; }
 
@@ -3642,6 +3657,9 @@ h6 {
 .border-top-light-gray {
   border-top: solid 1px #f6f7f8; }
 
+.border-top-article-blue {
+  border-top: solid 1px #0357a0; }
+
 .border-bottom-main {
   border-bottom: solid 1px #001b41; }
 
@@ -3665,6 +3683,9 @@ h6 {
 
 .border-bottom-light-gray {
   border-bottom: solid 1px #f6f7f8; }
+
+.border-bottom-article-blue {
+  border-bottom: solid 1px #0357a0; }
 
 .border-none {
   border: none !important; }

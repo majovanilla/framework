@@ -53,9 +53,9 @@ $i: 1;
   border: none !important;
 }
 
-@each $align in $align-items {
+@each $align in $text-align {
 
   .text-#{$align} {
-    $align-items: $align;
+    text-align: $align;
   }
 }

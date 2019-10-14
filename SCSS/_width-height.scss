@@ -2,11 +2,11 @@
 
 @for $i from 1 through 10 {
 	.h-#{$wh-options * $i}{
-		height: ($wh-options * $i)#{"%"}!important;
+		height: ($wh-options * $i)#{"% !important"};
 	}
 	
 	.w-#{$wh-options * $i}{
-		width: ($wh-options * $i)#{"%"}!important;
+		width: ($wh-options * $i)#{"% !important"};
 	}
 	
 }
@@ -18,11 +18,11 @@ $j: 1;
 
 		@for $i from 1 through 10 {
 			.h-#{nth($breakpoints,$j)}-#{$wh-options * $i}{
-				height: ($wh-options * $i)#{"%"}!important;
+				height: ($wh-options * $i)#{"% !important"};
 			}
 			
 			.w-#{nth($breakpoints,$j)}-#{$wh-options * $i}{
-				width: ($wh-options * $i)#{"%"}!important;
+				width: ($wh-options * $i)#{"% !important"};
 			}
 		}
     }   

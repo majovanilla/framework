@@ -32,3 +32,18 @@ $j: 1;
     }   
 	$j: $j + 1
 }
+
+@each $break in $breaks {
+
+    @media screen and (min-width: $break) { 
+
+		@each $direction in $flex-direction {
+			$j: 1;
+
+			.flex-#{$direction}-#{nth($breakpoints,$j)} {
+				flex-direction: #{$direction} !important; 
+			}
+		}
+    }   
+	$j: $j + 1
+}

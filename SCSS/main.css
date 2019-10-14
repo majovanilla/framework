@@ -16,6 +16,7 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
+  font-family: 'Open Sans', sans-serif;
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
@@ -3639,6 +3640,15 @@ h6 {
 .article-blue {
   color: #0357a0; }
 
+.bg-footer-blue {
+  background-color: #0b2863; }
+
+.border-footer-blue {
+  border: solid 1px #0b2863; }
+
+.footer-blue {
+  color: #0b2863; }
+
 .border-left-main {
   border-left: solid 1px #001b41; }
 
@@ -3665,6 +3675,9 @@ h6 {
 
 .border-left-article-blue {
   border-left: solid 1px #0357a0; }
+
+.border-left-footer-blue {
+  border-left: solid 1px #0b2863; }
 
 .border-right-main {
   border-right: solid 1px #001b41; }
@@ -3693,6 +3706,9 @@ h6 {
 .border-right-article-blue {
   border-right: solid 1px #0357a0; }
 
+.border-right-footer-blue {
+  border-right: solid 1px #0b2863; }
+
 .border-top-main {
   border-top: solid 1px #001b41; }
 
@@ -3720,6 +3736,9 @@ h6 {
 .border-top-article-blue {
   border-top: solid 1px #0357a0; }
 
+.border-top-footer-blue {
+  border-top: solid 1px #0b2863; }
+
 .border-bottom-main {
   border-bottom: solid 1px #001b41; }
 
@@ -3746,6 +3765,9 @@ h6 {
 
 .border-bottom-article-blue {
   border-bottom: solid 1px #0357a0; }
+
+.border-bottom-footer-blue {
+  border-bottom: solid 1px #0b2863; }
 
 .border-none {
   border: none !important; }

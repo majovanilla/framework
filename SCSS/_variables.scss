@@ -41,9 +41,10 @@ $secondary-blue: #3364a5;
 $light: #fff;
 $light-gray: #f6f7f8;
 $article-blue: #0357a0;
+$footer-blue: #0b2863;
 
 // change _font-color file if more colors are added
-$colors: $main, $secondary, $main-blue, $light-blue, $soft-blue, $secondary-blue, $light, $light-gray, $article-blue;
-$color-names: main, secondary, main-blue, light-blue, soft-blue, secondary-blue, light, light-gray, article-blue;
+$colors: $main, $secondary, $main-blue, $light-blue, $soft-blue, $secondary-blue, $light, $light-gray, $article-blue, $footer-blue;
+$color-names: main, secondary, main-blue, light-blue, soft-blue, secondary-blue, light, light-gray, article-blue, footer-blue;
 
 $font-weights: lighter, bold, bolder;

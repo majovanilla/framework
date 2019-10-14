@@ -37,7 +37,7 @@ $i: 1;
 // change if more colors are added
 @each $side in $side-name {
 
-    @for $k from 1 through 9{
+    @for $k from 1 through 10{
 	
 		.border-#{$side}-#{nth($color-names, $k)} {
 		

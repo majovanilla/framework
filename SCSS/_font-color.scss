@@ -52,3 +52,10 @@ $i: 1;
 .border-none{
   border: none !important;
 }
+
+@each $align in $align-items {
+
+  .text-#{$align} {
+    $align-items: $align;
+  }
+}

@@ -105,6 +105,41 @@ $j: 1;
 	$j: $j + 1
 }
 
+//ALIGN-FLEX OPTIONS
+
+@each $align in $align-flex {
+    $i: 1;
+    
+    @each $option in $align-options {
+
+        .#{$align}-#{nth($align-names, $i)} {
+            #{$align}: #{$option} !important; 
+        }
+        $i: $i + 1;
+    }
+}
+
+$j: 1;
+
+@each $break in $breaks {
+
+    @media screen and (min-width: $break) { 
+
+		@each $align in $align-flex {
+			$i: 1;
+			
+			@each $option in $align-options {
+
+				.#{$align}-#{nth($breakpoints,$j)}-#{nth($align-names, $i)} {
+					#{$align}: #{$option} !important; 
+				}
+				$i: $i + 1;
+			}
+		}
+    }   
+	$j: $j + 1
+}
+
 @each $direction in $flex-direction {
 
 	.flex-#{$direction} {

@@ -24,9 +24,14 @@ $sizes-name: 0;
 $sizes: 0, 0.5rem, 1rem, 1.5rem, 2rem, 2.5rem, 3rem, 3.5rem, 4rem, 4.5rem, 5rem;
 $side-name: "left", "right", "top", "bottom";
 
-$display-flex: justify-content, align-items, align-content, align-self;
-$flex-options: flex-start, flex-end, space-around, space-between, center;
+$display-flex: justify-content, align-content; 
 $flex-name: start, end, around, between, center;
+$flex-options: flex-start, flex-end, space-around, space-between, center;
+
+$align-flex: align-items, align-self;
+$align-names: start, end, center, stretch, baseline;
+$align-options: flex-start, flex-end, center, stretch, baseline;
+
 $text-align: start, end, center, justify;
 $flex-direction: row, column, row-reverse, column-reverse; 
 

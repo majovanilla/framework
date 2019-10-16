@@ -1,0 +1,61 @@
+// FONT STYLES
+
+//Colors
+//Font weight
+@each $font-weight in $font-weights {
+
+	.font-weight-#{$font-weight}{
+		font-weight: $font-weight !important;
+	}
+	
+}
+
+// italic
+.font-italic {
+  font-style: italic !important;
+}
+
+//Background & Border Colors
+
+$i: 1;
+@each $color in $colors {
+
+    .bg-#{nth($color-names, $i)} {
+        background-color: $color;
+    }
+
+    .border-#{nth($color-names, $i)} {
+       border: solid 1px $color;
+   }
+    
+     .#{nth($color-names, $i)} {
+        color: $color;
+    }
+    $i: $i +1;
+}
+
+// change if more colors are added
+@each $side in $side-name {
+
+    @for $k from 1 through 10{
+	
+		.border-#{$side}-#{nth($color-names, $k)} {
+		
+			border-#{$side}: solid 1px #{nth($colors, $k)};
+			
+		}
+		
+	}
+	
+}
+
+.border-none{
+  border: none !important;
+}
+
+@each $align in $text-align {
+
+  .text-#{$align} {
+    text-align: $align;
+  }
+}

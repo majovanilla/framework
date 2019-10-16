@@ -1,0 +1,49 @@
+//DISPLAY-FLEX OPTIONS
+
+@each $display in $display-flex {
+    $i: 1;
+    
+    @each $option in $flex-options {
+
+        .#{$display}-#{nth($flex-name, $i)} {
+            #{$display}: #{$option} !important; 
+        }
+        $i: $i + 1;
+    }
+}
+
+$j: 1;
+
+@each $break in $breaks {
+
+    @media screen and (min-width: $break) { 
+
+		@each $display in $display-flex {
+			$i: 1;
+			
+			@each $option in $flex-options {
+
+				.#{$display}-#{nth($breakpoints,$j)}-#{nth($flex-name, $i)} {
+					#{$display}: #{$option} !important; 
+				}
+				$i: $i + 1;
+			}
+		}
+    }   
+	$j: $j + 1
+}
+
+@each $break in $breaks {
+
+    @media screen and (min-width: $break) { 
+
+		@each $direction in $flex-direction {
+			$j: 1;
+
+			.flex-#{$direction}-#{nth($breakpoints,$j)} {
+				flex-direction: #{$direction} !important; 
+			}
+		}
+    }   
+	$j: $j + 1
+}

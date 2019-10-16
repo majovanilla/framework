@@ -1,0 +1,163 @@
+// Display Flex
+
+@mixin display-flex {
+    display: flex !important;
+}
+
+@mixin display-none {
+    display: none !important;
+}
+
+@mixin display-block {
+    display: block !important;
+}
+
+.d-block {
+    @include display-block();
+}
+
+.d-none {
+  @include display-none();
+}
+
+.d-flex {
+ @include display-flex();
+}
+
+@media screen and (max-width: $breakpoint-xs) { 
+
+.d-#{$xs}-flex{
+	@include display-flex();
+}
+}   
+
+$i: 1;
+
+@each $break in $breaks {
+
+    @media screen and (min-width: $break) { 
+
+        .d-#{nth($breakpoints,$i)}-flex{
+        @include display-flex();
+        }
+    }   
+	$i: $i + 1
+}
+
+$i: 1;
+
+@each $break in $breaks {
+
+    @media screen and (min-width: $break) { 
+
+        .d-#{nth($breakpoints,$i)}-block{
+        @include display-block();
+        }
+    }   
+	$i: $i + 1
+}
+
+$i: 1;
+
+@each $break in $breaks {
+
+    @media screen and (min-width: $break) { 
+
+        .d-#{nth($breakpoints,$i)}-none{
+        @include display-none();
+        }
+    }   
+	$i: $i + 1
+}
+
+//DISPLAY-FLEX OPTIONS
+
+@each $display in $display-flex {
+    $i: 1;
+    
+    @each $option in $flex-options {
+
+        .#{$display}-#{nth($flex-name, $i)} {
+            #{$display}: #{$option} !important; 
+        }
+        $i: $i + 1;
+    }
+}
+
+$j: 1;
+
+@each $break in $breaks {
+
+    @media screen and (min-width: $break) { 
+
+		@each $display in $display-flex {
+			$i: 1;
+			
+			@each $option in $flex-options {
+
+				.#{$display}-#{nth($breakpoints,$j)}-#{nth($flex-name, $i)} {
+					#{$display}: #{$option} !important; 
+				}
+				$i: $i + 1;
+			}
+		}
+    }   
+	$j: $j + 1
+}
+
+//ALIGN-FLEX OPTIONS
+
+@each $align in $align-flex {
+    $i: 1;
+    
+    @each $option in $align-options {
+
+        .#{$align}-#{nth($align-names, $i)} {
+            #{$align}: #{$option} !important; 
+        }
+        $i: $i + 1;
+    }
+}
+
+$j: 1;
+
+@each $break in $breaks {
+
+    @media screen and (min-width: $break) { 
+
+		@each $align in $align-flex {
+			$i: 1;
+			
+			@each $option in $align-options {
+
+				.#{$align}-#{nth($breakpoints,$j)}-#{nth($align-names, $i)} {
+					#{$align}: #{$option} !important; 
+				}
+				$i: $i + 1;
+			}
+		}
+    }   
+	$j: $j + 1
+}
+
+@each $direction in $flex-direction {
+
+	.flex-#{$direction} {
+		flex-direction: #{$direction} !important; 
+	}
+}
+
+@each $break in $breaks {
+
+    @media screen and (min-width: $break) { 
+
+        @each $direction in $flex-direction {
+            $j: 1;
+
+            .flex-#{$direction}-#{nth($breakpoints,$j)} {
+                flex-direction: #{$direction} !important; 
+            }
+        }
+    }   
+    $j: $j + 1
+}
